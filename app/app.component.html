@@ -9,11 +9,15 @@
       <li [routerLinkActive]="['active']"> <a [routerLink]="['one']">One</a></li>
       <li [routerLinkActive]="['active']"> <a [routerLink]="['second']">Second</a></li>
     </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+    </ul>
   </div>
 
 </nav>
 
-<div class="panel panel-default">
+<div class="fullheight panel panel-default ">
   <div class="panel-body">
     <router-outlet></router-outlet>
   </div>
