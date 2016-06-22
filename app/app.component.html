@@ -1,7 +1,20 @@
-  <h1>Component Router</h1>
-  <nav>
-    <a [routerLink]="['home']">Home</a>
-    <a [routerLink]="['second']">Second</a>
- 
-  </nav>
-  <router-outlet></router-outlet>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">My SAP-ANGULAR App</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li [routerLinkActive]="['active']"> <a [routerLink]="['one']">One</a></li>
+      <li [routerLinkActive]="['active']"> <a [routerLink]="['second']">Second</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <router-outlet></router-outlet>
+  </div>
+</div>
