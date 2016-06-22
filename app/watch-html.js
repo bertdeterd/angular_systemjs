@@ -1,0 +1,1 @@
+var view = require( './app.component.html');
