@@ -6,7 +6,7 @@ import { NgForm }    from '@angular/common';
 @Component({
   //selector: 'my-app',
   directives: [ROUTER_DIRECTIVES],
-  template: require('./one.component.html')
+  template: require('./one.component.html') //kudos for webpack: require can use relative url
 })
 
 export class OneComponent {
