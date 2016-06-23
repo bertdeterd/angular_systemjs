@@ -1,8 +1,11 @@
+export interface ICase001 {
+  caseId: string,
+  caseTitle: string
+}
+
 export class Case001 {
   constructor(
-    public id: number,
-    public externalId: string,
-    public createdBy: string,
-    public title?: string
+    public caseId: string,
+    public caseTitle: string
   ) {  }
 }

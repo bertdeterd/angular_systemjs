@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
-import { Case001 } from '../model/Case001';
+import { Case001, ICase001 } from '../model/Case001';
+import { NgForm }    from '@angular/common';
 
 @Component({
   //selector: 'my-app',
@@ -10,9 +11,14 @@ import { Case001 } from '../model/Case001';
 
 export class OneComponent {
 
+  model = new Case001('1', 'My First Case');
+
   onSubmit() {
 
   }
+
+  // TODO: Remove this when we're done
+  get diagnostic() { return JSON.stringify(this.model); }
 
 }
 
