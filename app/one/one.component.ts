@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Case001 } from '../model/Case001';
 
 @Component({
-  selector: 'my-app',
+  //selector: 'my-app',
   directives: [ROUTER_DIRECTIVES],
-  templateUrl: 'app/one/one.component.html'
+  template: require('./one.component.html')
 })
-export class OneComponent { }
+
+export class OneComponent {
+
+  onSubmit() {
+
+  }
+
+}
 
