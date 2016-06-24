@@ -1,0 +1,21 @@
+  <p>Hello Second</p>
+
+   <div class='table-responsive'>
+            <table class='table' >
+                <thead>
+                    <tr>
+                        <th>Case ID</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let case of cases'>
+                       
+                        <td>{{ case.caseId }}</td>
+                        <td>{{ case.caseTitle }}</td>
+                      
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+  
