@@ -1,11 +1,11 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var nodeExternals = require('webpack-node-externals');
+//var nodeExternals = require('webpack-node-externals');
 var path = require('path');
 
 module.exports = {
  // entry: "./app/main",
-  entry: ['webpack/hot/dev-server' , './app/main'],
+  entry: [ './app/main'], //'webpack/hot/dev-server' ,
   
   output: { 
       path: path.resolve('dist/'),//__dirname,
@@ -25,7 +25,7 @@ module.exports = {
   
   //order matters for debugging in chrome
   resolve: {
-    extensions: ['', '.ts', '.js', '.html' ]
+    extensions: ['', '.ts', '.js', '.html' ] //, '.html'
   },
 
 
@@ -40,7 +40,7 @@ module.exports = {
 
           {
             test: /\.html$/,
-            loader: "raw-loader" ,
+            loader: "raw-loader",
             exclude: /node_modules/
           }
 
@@ -54,7 +54,7 @@ module.exports = {
      
      new HtmlWebpackPlugin({
       filename:'index.html',
-      template: 'index.html'
+      template: 'index-template.html'
     })
   ]
 

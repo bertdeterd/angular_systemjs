@@ -11,7 +11,11 @@
                 <tbody>
                     <tr class='clickable-row' *ngFor='let case of cases'>
                        
-                        <td>{{ case.caseId }}</td>
+                        <td>
+                          <a [routerLink]="['case', case.caseId]">
+                            {{ case.caseId }}
+                            </a>
+                        </td>
                         <td>{{ case.caseTitle }}</td>
                       
                     </tr>

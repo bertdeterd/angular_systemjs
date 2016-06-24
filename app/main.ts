@@ -2,13 +2,15 @@
 import { bootstrap }            from '@angular/platform-browser-dynamic';
 import { AppComponent }         from './app.component';
 import { APP_ROUTER_PROVIDERS } from './app.routes';
-import {  provideForms } from '@angular/forms';
+import { disableDeprecatedForms, provideForms } from '@angular/forms';
+
+//makes it possible to go to specific app url directly
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 bootstrap(AppComponent,  [
   APP_ROUTER_PROVIDERS,
-  //disableDeprecatedForms(),
-  provideForms()
+  disableDeprecatedForms(),
+  provideForms(),
+  { provide: LocationStrategy, useClass: HashLocationStrategy }
 ])
 .catch(err => console.error(err));
-
-
