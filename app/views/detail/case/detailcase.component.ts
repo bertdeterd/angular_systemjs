@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ROUTER_DIRECTIVES, ActivatedRoute  } from '@angular/router';
 //import { Case001, ICase001 } from '../../model/Case001';
 import { NgForm }    from '@angular/common';
 
@@ -9,7 +9,26 @@ import { NgForm }    from '@angular/common';
   template: require('./detailcase.component.html') //kudos for webpack: require can use relative url
 })
 
-export class DetailCaseComponent {
+export class DetailCaseComponent implements OnInit {
+
+  caseID: string;
+
+  constructor(
+    private _route: ActivatedRoute
+  ){}
+
+ ngOnInit() {
+    this._route.params
+      .map(params => params['id'])
+      .subscribe((id) => {
+        console.log(id);
+        this.caseID = id;
+       // this.contactsService
+        //  .getContact(id)
+        //  .subscribe(contact => this.contact = contact);
+      });
+  }
+  
 
   //model = new Case001('1', 'My First Case');
 
