@@ -9,7 +9,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class='clickable-row' *ngFor='let case of cases'>
+                    <!-- Async pipe is used to bind an observable directly in our template -->
+                    <tr class='clickable-row' *ngFor='let case of cases$ | async'>
                        
                         <td>
                           <a [routerLink]="['case', case.caseId]">
