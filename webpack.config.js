@@ -5,6 +5,7 @@ var path = require('path');
 
 module.exports = {
  // entry: "./app/main",
+  //context: path.join(process.env.PWD, '/'),
   entry: [ './app/main'], //'webpack/hot/dev-server' ,
   
   output: { 
@@ -25,7 +26,8 @@ module.exports = {
   
   //order matters for debugging in chrome
   resolve: {
-    extensions: ['', '.ts', '.js', '.html' ] //, '.html'
+    extensions: ['', '.ts', '.js', '.html' ], //, '.html'
+    modulesDirectories: ["web_modules", "node_modules"]
   },
 
 
