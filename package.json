@@ -6,7 +6,7 @@
     "build:prd": "webpack -p --config ./webpack.prd.config.js",
     "start": "webpack-dev-server -d --inline --hot",
     "watch": "webpack --watch --progress --profile",
-    "typings": "typings"
+    "typings": "typings"  
   },
   "license": "ISC",
   "dependencies": {
