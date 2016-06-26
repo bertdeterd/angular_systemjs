@@ -31,7 +31,7 @@ export class CaseService {
   }
 
   getCases() {
-    this._http.get(`http://private-dbeab6-casedata.apiary-mock.com/cases`).map(response => response.json())
+    this._http.get(`https://private-dbeab6-casedata.apiary-mock.com/cases`).map(response => response.json())
         .subscribe(data => {
                 //update internal datastore
                 this._dataStore.cases = data;
