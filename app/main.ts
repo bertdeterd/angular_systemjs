@@ -1,4 +1,10 @@
 // main entry point
+
+//import 'zone.js';
+//import 'reflect-metadata';
+//you may need es6-shim if you get an error relating to list.fill
+//import es6-shim;
+
 import { bootstrap }            from '@angular/platform-browser-dynamic';
 import { AppComponent }         from './app.component';
 import { APP_ROUTER_PROVIDERS } from './app.routes';

@@ -9,11 +9,14 @@
     <script src="node_modules/core-js/client/shim.min.js"></script>
 
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+    <!--zones.js should always be included as <script> tag via HTML and not loaded via module loader as this might affect its monkey-patching -->
+    <script src="node_modules/zone.js/dist/zone.js"></script> 
+    
+    <script src="node_modules/reflect-metadata/Reflect.js"></script> 
 
      <link href="styles.css" rel="stylesheet" />
-     <script src="node_modules/systemjs/dist/system.src.js"></script> 
+ <!--   <script src="node_modules/systemjs/dist/system.src.js"></script> -->
  
 </head>
 

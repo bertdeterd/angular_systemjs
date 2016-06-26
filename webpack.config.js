@@ -6,11 +6,11 @@ var path = require('path');
 module.exports = {
  // entry: "./app/main",
   //context: path.join(process.env.PWD, '/'),
-  entry: [ './app/main'], //'webpack/hot/dev-server' ,
+  entry: {  app: './app/main'}, //'webpack/hot/dev-server' ,
   
   output: { 
       path: path.resolve('dist/'),//__dirname,
-      filename: "bundle.js" //./dist/bundle.js"
+      filename: "[name]-bundle.js" //./dist/bundle.js"
   } ,
       
   //
