@@ -6,6 +6,7 @@ Credits to:
 import { Injectable } from '@angular/core';
 import { ICase001 } from '../model/Case001';
 import { Http } from '@angular/http';
+//import { Https } from '@angular/https';
 import { Subject } from 'rxjs/Subject';
 
 @Injectable()
