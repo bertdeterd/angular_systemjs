@@ -1,36 +1,30 @@
+/* ----------------------------------------------
+ Reason for choosing webpack:
+ Angular 2 is a SPA
+ A SPA is the type of web app webpack is designed and optimized for
+---------------------------------------------- */ 
+
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-//var nodeExternals = require('webpack-node-externals');
 var path = require('path');
 
 module.exports = {
- // entry: "./app/main",
-  //context: path.join(process.env.PWD, '/'),
-  entry: {  app: './app/main'}, //'webpack/hot/dev-server' ,
+ 
+  entry: {  app: './app/main'}, 
   
   output: { 
-      path: path.resolve('dist/'),//__dirname,
-      filename: "[name]-bundle.js" //./dist/bundle.js"
+      path: path.resolve('dist/'),
+      filename: "[name]-bundle.js"
   } ,
-      
-  //
-  /*
-  target: 'node', // in order to ignore built-in modules like path, fs, etc. 
-  externals: [nodeExternals()], // in order to ignore all modules in node_modules folder 
-  */
-  
+
+  webpack: webpack,
   devtool: 'source-map',
-  
-  //resolve.modulesDirectories
-  //Default: ["web_modules", "node_modules"] webpack will look in “./mydir”, “../mydir”, “../../mydir”, etc
   
   //order matters for debugging in chrome
   resolve: {
-    extensions: ['', '.ts', '.js', '.html' ], //, '.html'
-    modulesDirectories: ["web_modules", "node_modules"]
+    extensions: ['', '.ts', '.js', '.html' ], 
+    modulesDirectories: ["node_modules"]
   },
-
-
    
   module: {
       loaders: [
@@ -48,16 +42,14 @@ module.exports = {
 
       ]
   },
-  
+
+
    plugins: [
-     
-     //why do we need this plugin? we can just do a webpack -p 
-     //new webpack.optimize.UglifyJsPlugin(),
-     
-     new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin({
       filename:'index.html',
-      template: 'index-template.html'
-    })
+      template: 'index-template.html',
+      favicon: 'public/favi.ico'
+   })
   ]
 
 };

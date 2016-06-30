@@ -10,3 +10,6 @@ TODO:
 
 //"postinstall": "typings install"//test2
 // "typings": "^1.0.4"
+
+Karma
+warnings in dev mode
