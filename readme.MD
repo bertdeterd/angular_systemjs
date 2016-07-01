@@ -13,3 +13,5 @@ TODO:
 
 Karma
 warnings in dev mode
+
+ "systemjs": "^0.19.31",

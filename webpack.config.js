@@ -1,9 +1,8 @@
 /* ----------------------------------------------
  Reason for choosing webpack:
- Angular 2 is a SPA
- A SPA is the type of web app webpack is designed and optimized for
+ - Angular 2 is a SPA
+ - A SPA is the type of web app webpack is designed and optimized for
 ---------------------------------------------- */ 
-
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
@@ -35,7 +34,7 @@ module.exports = {
           },
 
           {
-            test: /\.html$/,
+            test: [/\.html$/, /\.css$/],
             loader: "raw-loader",
             exclude: /node_modules/
           }

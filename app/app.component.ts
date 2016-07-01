@@ -7,9 +7,9 @@ import {  CaseService } from './services/case.service';
   selector: 'my-app', 
   directives: [ROUTER_DIRECTIVES],
   providers: [CaseService],
-  //styles: [`.fullheight { height:100%;}` ],
+  styles: [require('./general.css')],
   template: require('./app.component.html')
 })
-
+ 
 export class AppComponent  {}
 

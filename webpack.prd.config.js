@@ -7,7 +7,7 @@ const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
  Delete all development code like console.log
 ---------------------------------------------- */ 
 var stripLoader = {
- test: [/|.js$/, /\.ts$/ ],
+ test: [/\.js$/, /\.ts$/ ],
  exclude: /node_modules/,
  loader: WebpackStrip.loader('console.log')
 };
@@ -20,6 +20,10 @@ devConfig.module.loaders.push(stripLoader);
 delete devConfig.devtool;
 
 
+/* ----------------------------------------------
+ Set process var ENV to production
+ See main.ts for usage
+---------------------------------------------- */ 
  var prodDefiner = new devConfig.webpack.DefinePlugin({
       'process.env': {
         'ENV': JSON.stringify(ENV)

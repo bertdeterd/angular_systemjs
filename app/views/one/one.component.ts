@@ -4,7 +4,7 @@ import { Case001, ICase001 } from '../../model/Case001';
 import { NgForm }    from '@angular/common';
 
 @Component({
-  //selector: 'my-app',
+  selector: 'my-one',
   directives: [ROUTER_DIRECTIVES],
   template: require('./one.component.html') //kudos for webpack: require can use relative url
 })
