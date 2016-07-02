@@ -58655,7 +58655,7 @@
   \*************************/
 /***/ function(module, exports) {
 
-	module.exports = "/* Sticky footer styles\r\n-------------------------------------------------- */\r\nhtml {\r\n  position: relative;\r\n  min-height: 100%;\r\n}\r\nbody {\r\n  /* Margin bottom by footer height */\r\n  margin-bottom: 60px;\r\n}\r\n.footer {\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  /* Set the fixed height of the footer here */\r\n  height: 60px;\r\n  background-color: #333333;\r\n}\r\n\r\n\r\n/* Custom page CSS\r\n-------------------------------------------------- */\r\n/* Not required for template or sticky footer method. */\r\n\r\nbody > .container {\r\n  padding: 60px 15px 0;\r\n}\r\n.container .text-muted {\r\n  margin: 20px 0;\r\n}\r\n\r\n\r\n.footer > .container {\r\n  padding-right: 15px;\r\n  padding-left: 15px;\r\n  \r\n}\r\n\r\ncode {\r\n  font-size: 80%;\r\n}\r\n"
+	module.exports = "/* Sticky footer styles\r\n--------------------------------------------------\r\n*/\r\n\r\nbody {\r\n    padding-top: 70px;\r\n  }\r\n\r\n/*\r\n\r\nhtml {\r\n  position: relative;\r\n  min-height: 100%;\r\n}\r\nbody {\r\n  /* Margin bottom by footer height \r\n  margin-bottom: 60px;\r\n}\r\n.footer {\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  /* Set the fixed height of the footer here \r\n  height: 60px;\r\n  background-color: #333333;\r\n}\r\n*/\r\n\r\n\r\n\r\n"
 
 /***/ },
 /* 405 */
@@ -58664,7 +58664,7 @@
   \********************************/
 /***/ function(module, exports) {
 
-	module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <div class=\"navbar-header\">\r\n      <a class=\"navbar-brand\" href=\"#\">My ANGULAR App</a>\r\n    </div>\r\n\r\n    <ul class=\"nav navbar-nav\">\r\n      <li [routerLinkActive]=\"['active']\"> <a [routerLink]=\"['one']\">One</a></li>\r\n      <li [routerLinkActive]=\"['active']\"> <a [routerLink]=\"['second']\">Second</a></li>\r\n    </ul>\r\n\r\n    <ul class=\"nav navbar-nav navbar-right\">\r\n      <button type=\"button\" class=\"btn btn-default navbar-btn\">Sign in</button>\r\n    </ul>\r\n  </div>\r\n\r\n\r\n\r\n</nav>\r\n\r\n <router-outlet></router-outlet>\r\n\r\n<!--<div class=\"panel panel-default \">\r\n  <div class=\"panel-body\">\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</div>\r\n\r\n<!--\r\n<footer class=\"footer\">\r\n  <div class=\"container\">\r\n    <p class=\"text-muted\">Place sticky footer content here.</p>\r\n  </div>\r\n</footer>\r\n-->"
+	module.exports = "\r\n<header>\r\n<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <div class=\"navbar-header\">\r\n      <a class=\"navbar-brand\" href=\"#\">My ANGULAR App</a>\r\n    </div>\r\n\r\n    <ul class=\"nav navbar-nav\">\r\n      <li [routerLinkActive]=\"['active']\"> <a [routerLink]=\"['one']\">One</a></li>\r\n      <li [routerLinkActive]=\"['active']\"> <a [routerLink]=\"['second']\">Second</a></li>\r\n    </ul>\r\n\r\n    <ul class=\"nav navbar-nav navbar-right\">\r\n      <button type=\"button\" class=\"btn btn-default navbar-btn\">Sign in</button>\r\n    </ul>\r\n  </div>\r\n\r\n\r\n\r\n</nav>\r\n</header>\r\n\r\n\r\n\r\n  <div  >\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n\r\n\r\n<!--\r\n<footer class=\"footer\">\r\n  <div class=\"container\">\r\n    <p class=\"text-muted\">Place sticky footer content here.</p>\r\n  </div>\r\n</footer>\r\n-->"
 
 /***/ },
 /* 406 */
@@ -58732,7 +58732,7 @@
   \**********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "\r\n<div>\r\n<div class=\"jumbotron\">\r\n  <h1>Hello, world!</h1>\r\n  <p>Aanvullende tekst</p>\r\n  <p><a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Learn more</a></p>\r\n</div>\r\n\r\n\r\n<footer class=\"footer\">\r\n  <div class=\"container\">\r\n    <p class=\"text-muted\">Place sticky footer content here.</p>\r\n  </div>\r\n</footer>\r\n</div>"
+	module.exports = "\r\n<div>\r\n<div class=\"jumbotron\">\r\n  <h1>Hello, world!</h1>\r\n  <p>Aanvullende tekst</p>\r\n  <p><a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Learn more</a></p>\r\n</div>\r\n\r\n\r\n<footer class=\"footer\">\r\n  <div class=\"container\">\r\n    <p class=\"text-muted\">Place sticky fooMAIN ter content here.</p>\r\n  </div>\r\n</footer>\r\n</div>"
 
 /***/ },
 /* 409 */
@@ -58768,7 +58768,7 @@
 	    });
 	    OneComponent = __decorate([
 	        core_1.Component({
-	            //selector: 'my-app',
+	            selector: 'my-one',
 	            directives: [router_1.ROUTER_DIRECTIVES],
 	            template: __webpack_require__(/*! ./one.component.html */ 411) //kudos for webpack: require can use relative url
 	        }), 
@@ -58805,7 +58805,7 @@
   \******************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container-fluid\">\r\n\r\n  <form class=\"form-horizontal\" role=\"form\" (ngSubmit)=\"onSubmit()\" #myForm=\"ngForm\">\r\n    <div class=\"form-group\">\r\n      <label class=\"control-label col-sm-2\" for=\"caseId\">Name</label>\r\n      <div class=\"col-sm-10\">\r\n        <input class=\"form-control\" type=\"text\" class=\"form-control\" required [(ngModel)]=\"model.caseId\" name=\"caseId\" #name=\"ngModel\"\r\n          readonly>\r\n      </div>\r\n      <!--   <div [hidden]=\"name.valid || name.pristine\" class=\"alert alert-danger\">\r\n          Name is required\r\n        </div> -->\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label class=\"control-label col-sm-2\" for=\"caseTitle\">Title</label>\r\n      <div class=\"col-sm-10\">\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"model.caseTitle\" name=\"caseTitle\" #caseTitle=\"ngModel\" required >\r\n      </div>\r\n       <div class=\"alert alert-danger\" [hidden]=\"caseTitle.valid || caseTitle.pristine\">Fill in a Title</div>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-default\" [disabled]=\"!myForm.form.valid\">Submit</button>\r\n\r\n  </form>\r\n\r\n  \r\n</div>\r\n\r\n<footer class=\"footer\">\r\n  <div class=\"container\">\r\n    <p class=\"text-muted\">Place sticky footer content here.</p>\r\n  </div>\r\n</footer>\r\n\r\n\r\n"
+	module.exports = "<div class=\"container\">\r\n\r\n  <form class=\"form-horizontal\" role=\"form\" (ngSubmit)=\"onSubmit()\" #myForm=\"ngForm\">\r\n  \r\n\r\n    <div class=\"form-group\">\r\n      <label class=\"control-label col-sm-2\" for=\"caseTitle\">Title</label>\r\n      <div class=\"col-sm-10\">\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"model.caseTitle\" name=\"caseTitle\" #caseTitle=\"ngModel\" required >\r\n      </div>\r\n       <div class=\"alert alert-danger\" [hidden]=\"caseTitle.valid || caseTitle.pristine\">Fill in a Title</div>\r\n    </div>\r\n\r\n      <div class=\"form-group\">\r\n      <label class=\"control-label col-sm-2\" for=\"caseId\">Name</label>\r\n      <div class=\"col-sm-10\">\r\n        <input class=\"form-control\" type=\"text\" class=\"form-control\" required [(ngModel)]=\"model.caseId\" name=\"caseId\" #name=\"ngModel\"\r\n          readonly>\r\n      </div>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-default\" [disabled]=\"!myForm.form.valid\">Submit</button>\r\n\r\n  </form>\r\n\r\n  \r\n</div>\r\n\r\n<footer class=\"footer\">\r\n  <div class=\"container\">\r\n    <p class=\"text-muted\">Place sticky footer ONE  content here.</p>\r\n  </div>\r\n</footer>\r\n\r\n\r\n"
 
 /***/ },
 /* 412 */

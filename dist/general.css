@@ -1,15 +1,20 @@
-/* Sticky footer styles
---------------------------------------------------
-*/
+/*-----------------------------------------------------------------
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+-----------------------------------------------------------------*/
 
 body {
-    padding-top: 70px;
-  }
+  padding-top: 50px;
+  height:100%;
+  overflow:hidden;
+}
 
-
-  html {
+html {
   position: relative;
-  min-height: 100%;
+  height: 100%;
+}
+
+.my-navbar-header {
+    margin-left: -20px;
 }
 
 .footer {
@@ -21,25 +26,61 @@ body {
   background-color: #333333;
 }
 
-/*
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height 
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
+.flex-container {
+  display: flex;
+  height: 100%;
   width: 100%;
-  /* Set the fixed height of the footer here 
-  height: 60px;
-  background-color: #333333;
+}    
+
+.flex-item-sidebar {
+  width: 250px;
+  height: 100%;
+  margin: auto;  /* Magic! */
+}    
+
+.flex-item-content {
+  width: 100%;
+  height: 100%;
+ /* margin: auto;  /* Magic! */
+}    
+
+/*
+.flex-container {
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  flex-direction : row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
 }
+
+.flex-item-sidebar {
+  background: hotpink;
+  width: 100px;
+  height: 100%;
+  flex: 'flex-grow' ;
+-ms-flex: 0 100px;
+-webkit-box-flex:  0;
+-moz-box-flex:  0;
+-ms-box-flex:  0;
+box-flex:  0;  
+}
+
+
+.flex-item-content {
+  background-color: yellow;
+  height: 100%;
+ -ms-flex: 1;
+ -webkit-box-flex: 1;
+ -moz-box-flex: 1;
+ -ms-box-flex: 1;
+ box-flex: 1;  
+}
+
 */
-
-
-

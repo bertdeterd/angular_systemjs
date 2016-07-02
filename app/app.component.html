@@ -1,10 +1,12 @@
-
-<header>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
 
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">My ANGULAR App</a>
+    <div class="navbar-header" style="margin-left:-20px;" >
+      <ul class="nav navbar-nav">
+        
+      <li><a (click)="showSidebar = !showSidebar"><i class="glyphicon glyphicon-th"  aria-hidden="true"></i></a></li>
+      </ul>
+       <a class="navbar-brand" href="#">Brand</a>
     </div>
 
     <ul class="nav navbar-nav">
@@ -16,18 +18,18 @@
       <button type="button" class="btn btn-default navbar-btn">Sign in</button>
     </ul>
   </div>
-
-
-
 </nav>
-</header>
 
+<div class="flex-container">
 
-
-  <div  >
-    <router-outlet></router-outlet>
+  <div class="flex-item-sidebar" *ngIf="showSidebar">
+    <my-app-sidebar></my-app-sidebar>
   </div>
 
+  <div class="flex-item-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
 <!--
 <footer class="footer">

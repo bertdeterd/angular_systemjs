@@ -1,9 +1,12 @@
 import { bootstrap }            from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
 import { AppComponent }         from './app.component';
+
+import { SidebarComponent }         from './views/sidebar/sidebar.component';
+
 import { APP_ROUTER_PROVIDERS } from './app.routes';
 import { HTTP_PROVIDERS } from '@angular/http';
-import {  provideForms } from '@angular/forms'; //disableDeprecatedForms,
+import {  provideForms, disableDeprecatedForms } from '@angular/forms'; //disableDeprecatedForms,
 
 
 /* -------------------------------------------------------------
@@ -23,7 +26,7 @@ if (process.env.ENV === 'production') {
 bootstrap(AppComponent,  [
   APP_ROUTER_PROVIDERS,
   HTTP_PROVIDERS,
-  //disableDeprecatedForms(),
+  disableDeprecatedForms(),
   provideForms(),
   { provide: LocationStrategy, useClass: HashLocationStrategy }
 ])
