@@ -1,28 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
-
-import { SidebarComponent } from './views/sidebar/sidebar.component';
-
-import {  CaseService } from './services/case.service';
+import { SubbarComponent } from './views/subbar/subbar.component';
+import { CaseService } from './services/case.service';
 
 @Component({
   selector: 'my-app', 
-  directives: [ROUTER_DIRECTIVES, SidebarComponent],
+  directives: [ROUTER_DIRECTIVES, SubbarComponent],
   providers: [CaseService],
-  //styles: [require('./general.css')],
+  //styles: [require('raw!./general-test.css')],//DOET HET
   template: require('./app.component.html')
 })
  
 export class AppComponent  implements OnInit {
 
-  showSidebar: boolean;
+  showSubbar: boolean;
 
   constructor(){
  }
 
  ngOnInit(){
       
-   this.showSidebar = true;
+   this.showSubbar = false;
  }
 
 

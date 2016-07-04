@@ -2,18 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
-  selector: 'my-app-sidebar',
+  selector: 'my-app-subbar',
   directives: [ROUTER_DIRECTIVES],
-  template: require('./sidebar.component.html') 
+  template: require('./subbar.component.html') 
 })
 
-export class SidebarComponent implements OnInit { 
+export class SubbarComponent implements OnInit { 
   
  constructor(){
  }
 
  ngOnInit(){
-    console.log('Init SidebarComponent executed');
+    console.log('Init SubbarComponent executed');
  }
 
 }

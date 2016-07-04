@@ -1,40 +1,31 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+<div class="pos-f-t">
 
-    <div class="navbar-header" style="margin-left:-20px;" >
-      <ul class="nav navbar-nav">
-        
-      <li><a (click)="showSidebar = !showSidebar"><i class="glyphicon glyphicon-th"  aria-hidden="true"></i></a></li>
-      </ul>
-       <a class="navbar-brand" href="#">Brand</a>
-    </div>
+  <nav class="navbar navbar-full navbar-light bg-faded navbar-fixed-top">
+
+    <form class="form-inline pull-left">
+      <button class="btn btn-link" (click)="showSubbar = !showSubbar"><span class="fa fa-bars"></span></button>
+    </form>
+
+     <a class="navbar-brand" href="#">My Application</a>
 
     <ul class="nav navbar-nav">
-      <li [routerLinkActive]="['active']"> <a [routerLink]="['one']">One</a></li>
-      <li [routerLinkActive]="['active']"> <a [routerLink]="['second']">Second</a></li>
+      <li class="navbar-divider"></li>
+      <li [routerLinkActive]="['active']" class="nav-item"><a [routerLink]="['one']" class="nav-link">Home</a></li>
+      <li [routerLinkActive]="['active']" class="nav-item"><a [routerLink]="['second']" class="nav-link">Second</a></li>
     </ul>
 
-    <ul class="nav navbar-nav navbar-right">
-      <button type="button" class="btn btn-default navbar-btn">Sign in</button>
-    </ul>
-  </div>
-</nav>
+    <form class="form-inline pull-right">
+      <input class="form-control" type="text" placeholder="Search">
+      <button class="btn" type="submit">Search</button>
+    </form>
 
-<div class="flex-container">
-
-  <div class="flex-item-sidebar" *ngIf="showSidebar">
-    <my-app-sidebar></my-app-sidebar>
-  </div>
-
-  <div class="flex-item-content">
-    <router-outlet></router-outlet>
-  </div>
+  </nav>
 </div>
 
-<!--
-<footer class="footer">
-  <div class="container">
-    <p class="text-muted">Place sticky footer content here.</p>
-  </div>
-</footer>
--->
+<div class="container-fluid"  *ngIf="showSubbar">
+  <my-app-subbar></my-app-subbar>
+</div>
+
+<div class="container-fluid my-main">
+  <router-outlet></router-outlet>
+</div>

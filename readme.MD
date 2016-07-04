@@ -15,3 +15,16 @@ Karma
 warnings in dev mode
 
  "systemjs": "^0.19.31",
+
+
+ /*
+          {
+            test: [/\css$/],
+            include: helpers.root('src', 'app'),
+            loader: "raw-loader",
+            exclude: /node_modules/
+          },
+*/
+
+
+  "expose-loader": "^0.7.1",

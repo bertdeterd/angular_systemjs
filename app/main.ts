@@ -2,8 +2,6 @@ import { bootstrap }            from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
 import { AppComponent }         from './app.component';
 
-import { SidebarComponent }         from './views/sidebar/sidebar.component';
-
 import { APP_ROUTER_PROVIDERS } from './app.routes';
 import { HTTP_PROVIDERS } from '@angular/http';
 import {  provideForms, disableDeprecatedForms } from '@angular/forms'; //disableDeprecatedForms,
