@@ -52167,9 +52167,10 @@ webpackJsonp([0],[
 	    };
 	    CaseService = __decorate([
 	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [http_1.Http])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
 	    ], CaseService);
 	    return CaseService;
+	    var _a;
 	}());
 	exports.CaseService = CaseService;
 
@@ -55430,7 +55431,7 @@ webpackJsonp([0],[
   \**********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "\r\n  <div class=\"jumbotron\">\r\n    <h1>Hello, world!</h1>\r\n    <p>Aanvullende tekst ddddddddddddddddddddddddddddd ddddddddddd ddddddddddddd ddddd dddddddddddd ddddddddd fffffffffffffffffffffffffff\r\n      ffffffffff ggggggggggg ggggggg gggggg gggggggg hhhhhhhh hhhhhhh hhhhhhhhhhhhhhhhhhhhhhhhhh jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\r\n      kkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkk<br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yyzz\r\n      <br>\r\n\r\n    </p>\r\n    <p><a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Learn more</a></p>\r\n  </div>\r\n\r\n<nav class=\"navbar navbar-fixed-bottom navbar-light bg-faded\">\r\n  <div class=\"pull-right\">\r\n  <a class=\"navbar-brand\" href=\"#\">Fixed bottom START</a>\r\n  </div>\r\n</nav>\r\n"
+	module.exports = "\r\n  <div class=\"jumbotron\">\r\n    <h1>Hello, world!</h1>\r\n    <p>Aanvullende tekst ddddddddddddddddddddddddddddd ddddddddddd ddddddddddddd ddddd dddddddddddd ddddddddd fffffffffffffffffffffffffff\r\n      ffffffffff ggggggggggg ggggggg gggggg gggggggg hhhhhhhh hhhhhhh hhhhhhhhhhhhhhhhhhhhhhhhhh jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\r\n      kkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkk<br> sssszz\r\n      <br> yyzzzz\r\n      <br> ss\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> sss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yy\r\n      <br> ss\r\n      <br> yyzz\r\n      <br>\r\n\r\n    </p>\r\n    <p><a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Learn more</a></p>\r\n  </div>\r\n\r\n<nav class=\"navbar navbar-fixed-bottom navbar-light bg-faded\">\r\n  <div class=\"pull-right\">\r\n  <a class=\"navbar-brand\" href=\"#\">Fixed bottom START</a>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ },
 /* 410 */
@@ -55542,9 +55543,10 @@ webpackJsonp([0],[
 	            directives: [router_1.ROUTER_DIRECTIVES],
 	            template: __webpack_require__(/*! ./second.component.html */ 414)
 	        }), 
-	        __metadata('design:paramtypes', [case_service_1.CaseService])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof case_service_1.CaseService !== 'undefined' && case_service_1.CaseService) === 'function' && _a) || Object])
 	    ], SecondComponent);
 	    return SecondComponent;
+	    var _a;
 	}());
 	exports.SecondComponent = SecondComponent;
 
@@ -55599,9 +55601,10 @@ webpackJsonp([0],[
 	            directives: [router_1.ROUTER_DIRECTIVES],
 	            template: __webpack_require__(/*! ./detailcase.component.html */ 416) //kudos for webpack: require can use relative url
 	        }), 
-	        __metadata('design:paramtypes', [router_1.ActivatedRoute])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object])
 	    ], DetailCaseComponent);
 	    return DetailCaseComponent;
+	    var _a;
 	}());
 	exports.DetailCaseComponent = DetailCaseComponent;
 

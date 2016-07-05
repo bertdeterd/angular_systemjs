@@ -28,3 +28,5 @@ warnings in dev mode
 
 
   "expose-loader": "^0.7.1",
+
+   "ts-loader": "^0.8.2",

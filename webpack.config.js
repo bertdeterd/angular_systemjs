@@ -48,7 +48,6 @@ module.exports = {
     modulesDirectories: ["node_modules"]
   },
 
-
   module: {
 
     loaders: [
@@ -58,7 +57,7 @@ module.exports = {
       -------------------------------------------------------*/
       {
         test: /\.ts$/,
-        loader: 'ts-loader',
+        loader: 'awesome-typescript-loader',
         exclude: /node_modules/
       },
 
@@ -137,6 +136,8 @@ module.exports = {
     This plugin makes a module available as variable in every module. 
     The module is required only if you use the variable.
     Example: Make $ and jQuery available in every module without writing require("jquery").
+    JQuery: for BS scripts
+    Tether: for BS Tooltips and Popovers (better auto-placement and performance)
     -------------------------------------------------------*/
     new ProvidePlugin({
       jQuery: 'jquery',
